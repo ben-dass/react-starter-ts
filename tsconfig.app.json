@@ -9,6 +9,12 @@
             "DOM",
             "DOM.Iterable"
         ],
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "./*"
+            ]
+        },
         "module": "ESNext",
         "skipLibCheck": true,
         /* Bundler mode */
@@ -26,6 +32,8 @@
         "noFallthroughCasesInSwitch": true
     },
     "include": [
-        "src"
+        "src",
+        "components",
+        "lib"
     ]
 }
