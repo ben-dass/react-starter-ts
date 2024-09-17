@@ -6,11 +6,27 @@ import App from "./App";
 import { Provider } from "react-redux";
 import { store } from "@/src/state/store.ts";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Counter from "@/src/pages/Counter.tsx";
+import NotFound from "@/src/pages/NotFound.tsx";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <App />,
+		children: [
+			{
+				children: [
+					{
+						index: true,
+						element: <Counter />,
+					},
+				],
+			},
+			{
+				path: "*",
+				element: <NotFound />,
+			},
+		],
 	},
 ]);
 
