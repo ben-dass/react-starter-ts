@@ -4,8 +4,8 @@ import {
 	increment,
 	incrementAsync,
 	incrementByAmount,
-} from "@/src/state/counter/counterSlice.ts";
-import { useAppDispatch, useAppSelector } from "@/src/state/store.ts";
+} from "@/src/pages/Counter/counterSlice.ts";
+import { useAppDispatch, useAppSelector } from "@/src/store.ts";
 
 const Counter = () => {
 	const counter = useAppSelector((state) => {

@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "./counter/counterSlice.ts";
+import counterReducer from "./pages/Counter/counterSlice.ts";
 import { useDispatch, useSelector } from "react-redux";
 
 export const store = configureStore({
