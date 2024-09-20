@@ -6,7 +6,7 @@ export const store = configureStore({
 	reducer: { counter: counterReducer },
 });
 
-export type RootState = ReturnType<typeof store.dispatch>;
+export type RootState = ReturnType<typeof store.getState>;
 export const useAppSelector = useSelector.withTypes<RootState>();
 
 export type AppDispatch = typeof store.dispatch;
