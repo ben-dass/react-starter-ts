@@ -1,11 +1,11 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-export interface CounterState {
+export interface ICounterState {
 	value: number;
 	isFetching?: boolean;
 }
 
-const initialState: CounterState = {
+const initialState: ICounterState = {
 	value: 0,
 	isFetching: false,
 };

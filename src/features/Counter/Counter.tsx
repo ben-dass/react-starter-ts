@@ -1,14 +1,14 @@
-import { Button } from "@/components/ui/button.tsx";
+import { Button } from "@components/ui/button.tsx";
 import {
 	decrement,
 	increment,
 	incrementAsync,
 	incrementByAmount,
-} from "@/src/pages/Counter/counterSlice.ts";
-import { useAppDispatch, useAppSelector } from "@/src/store.ts";
+} from "@features/Counter/counterSlice";
+import { RootState, useAppDispatch, useAppSelector } from "@src/app/store";
 
 const Counter = () => {
-	const counter = useAppSelector((state) => {
+	const counter = useAppSelector((state: RootState) => {
 		console.log("state", state.counter);
 		return state.counter;
 	});

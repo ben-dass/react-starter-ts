@@ -1,5 +1,5 @@
-import TopNav from "@/src/components/TopNav.tsx";
-import Content from "@/src/components/Content.tsx";
+import TopNav from "@src/components/TopNav.tsx";
+import Content from "@src/components/Content.tsx";
 
 const App = () => {
 	return (

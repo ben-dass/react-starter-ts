@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "@/src/App.tsx";
-import Counter from "@/src/pages/Counter/Counter.tsx";
-import NotFound from "@/src/pages/NotFound.tsx";
+import App from "@src/App.tsx";
+import Counter from "@features/Counter/Counter.tsx";
+import NotFound from "@features/NotFound.tsx";
 
 const router = createBrowserRouter([
 	{
