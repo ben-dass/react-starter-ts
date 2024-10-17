@@ -20,7 +20,7 @@
             "@features/*": [
                 "./src/features/*"
             ],
-            "@app": [
+            "@app/*": [
                 "./src/app/*"
             ],
             "@src/*": [
