@@ -16,7 +16,7 @@ const Counter = () => {
 	const dispatch = useAppDispatch();
 
 	return (
-		<>
+		<div className="flex flex-col items-center">
 			<h1>
 				<span className="font-bold">Count: </span>
 				{counter.value}
@@ -39,7 +39,7 @@ const Counter = () => {
 				</div>
 				<Button onClick={() => dispatch(decrement())}>Decrement</Button>
 			</div>
-		</>
+		</div>
 	);
 };
 
